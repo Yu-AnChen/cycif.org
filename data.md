@@ -116,3 +116,16 @@ layout: data
     </p>
   </div>
 </div>
+<div class="row mb-4">
+  <div class="col-md-2">
+    <img class="img-fluid mb-3 w-100" src="{{ site.baseurl }}/assets/img/hemmin-nathenson-lin-2019/cover.jpg" alt="ntrk">
+  </div>
+  <div class="col">
+    <a href="{{ site.baseurl }}/data/hemmin-nathenson-lin-2019/">
+      <h5 class="mt-0">Hemmin, Nathenson, and Lin et al., 2019</h5>
+    </a>
+    <p>
+
+    </p>
+  </div>
+</div>
