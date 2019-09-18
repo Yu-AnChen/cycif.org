@@ -105,31 +105,43 @@ Exhibit:
         - CD11B
         - CD14
         - DNA
+    - Channels:
+      - Stroma
+      Colors:
+      - 000000
+      Name: Cluster_1 Stroma
+      Path: datalayer/clustering/merged_s40/level_0/cluster_id_1
+    - Channels:
+      - Others
+      Colors:
+      - 000000
+      Name: Cluster_2 Others
+      Path: datalayer/clustering/merged_s40/level_0/cluster_id_2
+    - Channels:
+      - Immune
+      Colors:
+      - 000000
+      Name: Cluster_3 Immune
+      Path: datalayer/clustering/merged_s40/level_0/cluster_id_3
+    - Channels:
+      - Tumor
+      Colors:
+      - 000000
+      Name: Cluster_4 Tumor
+      Path: datalayer/clustering/merged_s40/level_0/cluster_id_4
+    - Channels:
+      - .
+      Colors:
+      - 000000
+      Name: Cluster All
+      Path: datalayer/clustering/merged_s40/level_0/cluster_id_all
+    - Channels:
+      - .
+      Colors:
+      - 000000
+      Name: Segmentation Mask
+      Path: datalayer/segmentation
 
-    # - Path: Hsp70-HSF1-Hsp90
-    #   Name: Chaperones
-    #   Colors:
-    #     - 00FF00 
-    #     - FFFFFF
-    #     - FF0000
-    #     - 0000FF
-    #   Channels:
-    #     - Hsp70
-    #     - HSF1
-    #     - Hsp90
-    #     - DNA
-    # - Path: pan-cytokeratin-alphaSMA-CD45-CDX2
-    #   Name: Cell Type
-    #   Colors:
-    #     - 00FF00 
-    #     - FFFFFF
-    #     - FF0000
-    #     - 0000FF
-    #   Channels:
-    #     - α-SMA
-    #     - CD45
-    #     - CDX2
-    #     - Keratin
   Stories:
   - Name: Overview
     Description: 
