@@ -1,0 +1,113 @@
+Exhibit:
+  Name: NTRK_11981
+  Images:
+  - Name: i0
+    Description: Description for NTRK_11981
+    Path: https://s3.amazonaws.com/www.cycif.org/hemmin-nathenson-lin-2019/NTRK_11981
+    Width: 18937
+    Height: 11698
+    MaxLevel: 5
+  Layout:
+    Grid:
+    - - i0
+  Groups:
+  - Channels:
+    - NTRK
+    - CD68
+    - CD45
+    - DNA
+    Colors:
+    - 00ff00
+    - ff0000
+    - ff0000
+    - 0000ff
+    Name: Tumor-Immune
+    Path: Tumor-Immune_9__NTRK--22__CD68--23__CD45--8__DNA
+  - Channels:
+    - CD3
+    - CD4
+    - CD8A
+    - DNA
+    Colors:
+    - ffffff
+    - 00ff00
+    - ff0000
+    - 0000ff
+    Name: T-cells
+    Path: T-cells_14__CD3--13__CD4--27__CD8A--8__DNA
+  - Channels:
+    - PDL1
+    - PD1
+    - DNA
+    Colors:
+    - ff0000
+    - 00ff00
+    - 0000ff
+    Name: Checkpoint
+    Path: Checkpoint_19__PDL1--15__PD1--8__DNA
+  Stories:
+  - Name: Overview
+    Description: null
+    Waypoints:
+    - Zoom: 0.4803
+      Pan:
+      - 0.4357
+      - 0.4513
+      Group: Tumor-Immune
+      Name: The Waypoint
+      Description: ''
+      Overlay:
+        x: -100
+        y: -100
+        width: 200
+        height: 200
+  - Name: About
+    Description: null
+    Waypoints:
+    - Name: Waypoint 1
+      Group: Tumor-Immune
+      Description: The specimen is stained with a panel of markers comprising of cell
+        type markers (keratin, CDX2, CD45 and aSMA) and protein stress markers (HSF1,
+        Hsp27, Hsp70 and Hsp90).
+      Overlay:
+        x: -100
+        y: -100
+        width: 200
+        height: 200
+      Pan:
+      - 0.4823
+      - 0.4893
+      Zoom: 0.6313
+    - Name: Waypoint 2
+      Group: Tumor-Immune
+      Description: 'The normal epithelium is recognizable by
+
+        the distinct tissue morphology with
+
+        organized structures staining positive
+
+        for keratin and alpha smooth muscle
+
+        actin (SMA).
+
+
+        The cells in the intestinal villi
+
+        express both keratin (blue) and CDX2 (red). The villi
+
+        are surrounded by stromal cells (green) and
+
+        immune cells (white) that at times
+
+        infiltrate the inner villus structure.
+
+        '
+      Overlay:
+        x: 0.418
+        y: 0.5246
+        width: 0.4089
+        height: 0.4657
+      Pan:
+      - 0.6337
+      - 0.7403
+      Zoom: 1.2625

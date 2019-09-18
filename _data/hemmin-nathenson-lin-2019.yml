@@ -1,0 +1,24 @@
+publication:
+  title: Response and resistance to first- and second-generation TRK inhibitors in an NTRK1-driven sarcoma
+  authors: Matthew L. Hemming*, Michael J. Nathenson*, Jia-Ren Lin*, Shaolin Mei, Ziming Du, Karan Malik, Adrian Marino-Enriquez, Jyothi P. Jagannathan, Peter K. Sorger, Monica Bertagnolli, Ewa Sicinska, George D. Demetri, Sandro Santagat
+  journal: 
+  link: 
+    # name: Publication summary
+    # url: http://lincs.hms.harvard.edu/lin-elife-2018/
+
+stitched mosaic images:
+  - title: NTRK_11981
+    description: 
+    thumbnail file name: NTRK_11981.jpg
+    links: 
+      - CyCIF image: osd-NTRK_11981
+  - title: NTRK_23629
+    description: 
+    thumbnail file name: NTRK_23629.jpg
+    links:
+      - CyCIF image : osd-NTRK_23629
+  - title: NTRK_44524
+    description: 
+    thumbnail file name: NTRK_44524.jpg
+    links:
+      - CyCIF image: osd-NTRK_44524
