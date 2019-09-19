@@ -7,6 +7,11 @@ publication:
     # url: http://lincs.hms.harvard.edu/lin-elife-2018/
 
 stitched mosaic images:
+- thumbnail file name: N2.jpg
+  description: ''
+  links:
+  - CyCIF image: N2
+  title: Day -55, L6 - Skin Left Forearm
 - thumbnail file name: P6.jpg
   description: ''
   links:
@@ -112,11 +117,6 @@ stitched mosaic images:
 #   links:
 #   - CyCIF image: P5
 #   title: Day 1169, L3 - Brain, Right Occipital Lesion (image id mapping might be incorrect)
-- thumbnail file name: N2.jpg
-  description: ''
-  links:
-  - CyCIF image: N2
-  title: Day -55, L6 - Skin Left Forearm
 - thumbnail file name: N1.jpg
   description: ''
   links:
