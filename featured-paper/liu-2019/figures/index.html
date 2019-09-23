@@ -17,15 +17,15 @@ title: Data
 
 
 <h3>Available images</h3>
-<div class="row">
+<div class="row bg-white">
     <div class="col-12">
-        <img class="img-fluid w-100 px-4 bg-white py-2 mb-0" src="/assets/img/liu-2019/fig1_top.jpg" alt="">
+        <img class="img-fluid w-100 px-4 bg-white pt-2 mb-0" src="/assets/img/liu-2019/fig1_top.jpg" alt="">
     </div>
     <div class="col-12 collapse" id="fig1_bottom">
-        <img class="img-fluid w-100 px-4 bg-white py-2 mb-0" src="/assets/img/liu-2019/fig1_bottom.jpg" alt="">
+        <img class="img-fluid w-100 px-4 bg-white pb-2 mb-0" src="/assets/img/liu-2019/fig1_bottom.jpg" alt="">
     </div>
-    <div class="col-12 pt-2 text-center">
-            <p>Jump to a image by clicking the dots.</p>
+    <div class="col-12 text-center text-dark">
+            <p class="h6 my-3">Jump to a image by clicking the dots.</p>
     </div>
     <div class="col-1"></div>
     <div class="col-6">
@@ -37,8 +37,8 @@ title: Data
     <div class="col-3">
         <canvas id="lineageChart3" ></canvas>
     </div>
-    <div class="col-12 text-center">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fig1_bottom" aria-expanded="false" aria-controls="fig1_bottom">
+    <div class="col-12 text-center border-top">
+        <button class="btn btn-primary my-3" type="button" data-toggle="collapse" data-target="#fig1_bottom" aria-expanded="false" aria-controls="fig1_bottom">
             Show lineage details
         </button>
     </div>
@@ -66,12 +66,12 @@ title: Data
 <script>
 var ctx = document.getElementById('lineageChart1').getContext('2d');
 var colors = [
-    'rgba(96, 42, 175, 0.5)',
-    'rgba(142, 229, 242, 0.5)',
-    'rgba(138, 197, 75, 0.5)',
-    'rgba(234, 177, 66, 0.5)',
-    'rgba(234, 54, 57, 0.5)',
-    'rgba(58, 96, 168, 0.5)'
+    'rgba(96, 42, 175, 0.7)',
+    'rgba(142, 229, 242, 0.7)',
+    'rgba(138, 197, 75, 0.7)',
+    'rgba(234, 177, 66, 0.7)',
+    'rgba(234, 54, 57, 0.7)',
+    'rgba(58, 96, 168, 0.7)'
     // 'rgba(255, 99, 132, 0.2)',
     // 'rgba(54, 162, 235, 0.2)',
     // 'rgba(255, 206, 86, 0.2)',
@@ -125,7 +125,7 @@ var chart_config = {
                     label: 'P2'
                 }],
                 backgroundColor: colors[0],
-                borderColor: colors[0].replace('0.2', '1'),
+                borderColor: colors[0].replace('0.7', '1'),
                 borderWidth: 1
             },
             {
@@ -147,7 +147,7 @@ var chart_config = {
                     label: 'PE'
                 }],
                 backgroundColor: colors[1],
-                borderColor: colors[1].replace('0.2', '1'),
+                borderColor: colors[1].replace('0.7', '1'),
                 borderWidth: 1
             },
             {
@@ -168,7 +168,7 @@ var chart_config = {
                     label: 'P4'
                 }],
                 backgroundColor: colors[2],
-                borderColor: colors[2].replace('0.2', '1'),
+                borderColor: colors[2].replace('0.7', '1'),
                 borderWidth: 1
             },
             {
@@ -189,7 +189,7 @@ var chart_config = {
                     label: 'PK'
                 }],
                 backgroundColor: colors[3],
-                borderColor: colors[3].replace('0.2', '1'),
+                borderColor: colors[3].replace('0.7', '1'),
                 borderWidth: 1
             },
             {
@@ -206,7 +206,7 @@ var chart_config = {
                     label: 'PA'
                 }],
                 backgroundColor: colors[4],
-                borderColor: colors[4].replace('0.2', '1'),
+                borderColor: colors[4].replace('0.7', '1'),
                 borderWidth: 1
             },
             {
@@ -227,7 +227,7 @@ var chart_config = {
                     label: 'N3'
                 }],
                 backgroundColor: colors[5],
-                borderColor: colors[5].replace('0.2', '1'),
+                borderColor: colors[5].replace('0.7', '1'),
                 borderWidth: 1
             },
         ]
@@ -245,6 +245,7 @@ var chart_config = {
         maintainAspectRatio: false,
         scales: {
             yAxes: [{
+                gridLines: {display: false},
                 display: false,
                 ticks: {
                     max: 65,
@@ -271,7 +272,7 @@ var chart_config = {
 }
 new Chart(
     document.getElementById('lineageChart1').getContext('2d'),
-    setXRange(chart_config, -60, 180)
+    setXRange(chart_config, -60, 160)
 );
 new Chart(
     document.getElementById('lineageChart2').getContext('2d'),
@@ -279,7 +280,7 @@ new Chart(
 );
 new Chart(
     document.getElementById('lineageChart3').getContext('2d'),
-    setXRange(chart_config, 1800, 1870)
+    setXRange(chart_config, 1810, 1880)
 );
 function setXRange(config, min, max) {
     let cfg = Object.assign({}, config)
@@ -288,6 +289,10 @@ function setXRange(config, min, max) {
         max: max,
         maxRotation: 0,
         display: false
+    };
+    cfg.options.scales.xAxes[0].gridLines = {
+        display: false,
+        drawBorder: false
     };
     return cfg;
 }
